@@ -1,0 +1,384 @@
+html {
+    scroll-behavior: smooth;
+  }
+/* Hide the scrollbar */
+body::-webkit-scrollbar {
+  width: .5px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+/* Ensure the content can be scrolled */
+body {
+  overflow-y: scroll;
+}
+
+.logoname{
+    font-family: 'Lato', sans-serif;
+    color: #ffc107;
+}
+body > header > ul > li:nth-child(5) > a{
+    margin-right: 20px;
+}
+body > header > a > img{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.circle{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    background-color: #883A95;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-left: 150px;
+    position: relative;
+    transition: 0.5s ease-out;   
+}
+.circle:hover{
+    opacity: 0;
+}
+.jotaro{
+    width: 350px;
+    padding-left: 10px;
+    margin-bottom: auto;
+}
+
+.aboutme{
+    border-top: lightslategrey solid 1px ;
+    border-bottom: lightslategrey solid 1px ;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+.rafeh:hover{
+    color: #ffc107;
+    text-shadow:  0 0 20px #ffc107, 0 0 40px;
+}
+.rafeh{
+    transition: 0.5s ease-out;
+}
+.kira{
+    width: 300px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 50px;
+    z-index: -10;
+}
+.menacing:hover{
+    content: url(Assets/ball.png);
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+  }
+  .typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #883A95; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #883A95; }
+  }
+
+  .giftbox {
+    width: 300px;
+  }
+  
+  .dio {
+    padding-top: 70px;
+    width: 350px;
+  }
+  
+  .flip-container {
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+  }
+  
+  .me {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .me h1 {
+    font-size: 40px;
+    color: #333;
+  }
+  
+  .me p {
+    font-size: 24px;
+    color: #555;
+    margin-top: 10px;
+  }
+  .emailp {
+    font-size: 24px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .highlight {
+    font-weight: bold;
+  }
+  
+  .highlight-blue {
+    color: #007bff;
+  }
+  
+  .highlight-red {
+    color: #dc3545;
+  }
+  
+  .highlight-green {
+    color: #28a745;
+  }
+  
+  .highlight-yellow {
+    color: #ffc107;
+  }
+  
+  .highlight-pink {
+    color: #e83e8c;
+  }
+  
+  .highlight-purple {
+    color: #6f42c1;
+  }
+  
+  .highlight-orange {
+    color: #fd7e14;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  body {
+	background: linear-gradient(to right top, #883A95 50%, white 50%);
+	background-size: 100% calc(100% - 100vh + 129px);
+	background-repeat: no-repeat;
+	margin: 0;
+}
+body::before {
+	content: "";
+	position: fixed;
+	top: 85px;
+	bottom: 0;
+	width: 100%;
+	z-index: -10;
+	background: white;
+}
+.abtme {
+    display: inline;
+    background:
+      linear-gradient(
+        to right,
+        rgba(100, 200, 200, 1),
+        rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  .abtme:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+  u {    
+    border-bottom: 1px solid #883A95;
+    text-decoration: none;
+}
+u:hover{
+    border: none;
+}
+  /* progress */
+  .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(purple 90%, 	#D8BFD8 0);    
+  }
+  
+  .progress-bar::before {
+    content: "90%";
+  }
+
+  .progress-bar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(purple 80%, 	#D8BFD8 0);    
+  }
+  .progress-bar2::before {
+    content: "80%";
+  }
+
+  .progress-bar3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(purple 75%, 	#D8BFD8 0);    
+  }
+  .progress-bar3::before {
+    content: "75%";
+  }
+  .prg{
+    border-top: lightslategrey solid 1px ;
+
+  }
+
+  .gif-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+
+  
+  .hover-gif {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .gif-container:hover .hover-gif {
+    opacity: 1;
+    transform: translate(-50%, 10px);
+  }
+.progressborder{
+  border-bottom: lightslategrey solid 1px ;
+}
+
+.p-hover-gif {
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gif-container:hover .p-hover-gif {
+  opacity: 1;
+  transform: translate(-50%, 10px);
+}
+
+.cborder{
+  border-top: lightslategrey solid 1px ;
+}
+
+.c-hover-gif {
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gif-container:hover .c-hover-gif {
+  opacity: 1;
+  transform: translate(-50%, 10px);
+}
